@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Neumorphic Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="neumorphic-button">C</button>
+            <button onclick="backspace()" class="neumorphic-button">&#9003;</button>
+            <button onclick="appendToDisplay('/')" class="operator neumorphic-button">/</button>
+            <button onclick="appendToDisplay('*')" class="operator neumorphic-button">*</button>
+            <button onclick="appendToDisplay('7')" class="neumorphic-button">7</button>
+            <button onclick="appendToDisplay('8')" class="neumorphic-button">8</button>
+            <button onclick="appendToDisplay('9')" class="neumorphic-button">9</button>
+            <button onclick="appendToDisplay('-')" class="operator neumorphic-button">-</button>
+            <button onclick="appendToDisplay('4')" class="neumorphic-button">4</button>
+            <button onclick="appendToDisplay('5')" class="neumorphic-button">5</button>
+            <button onclick="appendToDisplay('6')" class="neumorphic-button">6</button>
+            <button onclick="appendToDisplay('+')" class="operator neumorphic-button">+</button>
+            <button onclick="appendToDisplay('1')" class="neumorphic-button">1</button>
+            <button onclick="appendToDisplay('2')" class="neumorphic-button">2</button>
+            <button onclick="appendToDisplay('3')" class="neumorphic-button">3</button>
+            <button onclick="calculateResult()" class="equal-button neumorphic-button">=</button>
+            <button onclick="appendToDisplay('0')" class="neumorphic-button">0</button>
+            <button onclick="appendToDisplay('.')" class="neumorphic-button">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
